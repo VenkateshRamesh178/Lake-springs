@@ -1,0 +1,58 @@
+.floorplans-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.floorplans-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2c3e50;
+}
+
+.floorplans-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.floorplan-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+  width: 250px;
+  text-align: center;
+}
+
+.floorplan-card:hover {
+  transform: translateY(-5px);
+}
+
+.floorplan-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.floorplan-card h3 {
+  font-size: 1.2rem;
+  padding: 1rem;
+  color: #34495e;
+}
+
+.floorplan-card button {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.floorplan-card button:hover {
+  background-color: #27ae60;
+}

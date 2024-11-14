@@ -1,0 +1,44 @@
+.location-section {
+    padding: 4rem 2rem;
+    background-color: #f4f4f9;
+  }
+  
+  .location-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .location-details {
+    flex: 1;
+    max-width: 45%;
+  }
+  
+  .location-details h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .location-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .location-details ul li {
+    font-size: 1.2rem;
+    padding: 0.5rem 0;
+    color: #2c3e50;
+  }
+  
+  .location-map {
+    flex: 1;
+    max-width: 50%;
+  }
+  
+  .location-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+  }
+  

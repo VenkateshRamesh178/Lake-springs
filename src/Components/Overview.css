@@ -1,0 +1,75 @@
+/* Overview Section with Blurred Background Image */
+.overview-section {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 4rem 2rem;
+    overflow: hidden; /* Ensures the blur effect doesn't overflow */
+  }
+  
+  /* Blurred Background Image */
+  .overview-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/bg.jpg') no-repeat center center/cover;
+    filter: blur(10px); /* Adjust the blur intensity as needed */
+    transform: scale(1.1); /* Slightly scale up for better blur effect */
+    z-index: 0;
+  }
+  
+  /* Content Overlay */
+  .overview-content {
+    position: relative;
+    z-index: 1; /* Ensures text stays above the blurred background */
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Semi-transparent background for better readability */
+    padding: 2rem;
+    border-radius: 8px;
+  }
+  
+  .overview-content h2 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .overview-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .overview-content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .overview-content ul li {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+  
+  .download-brochure {
+    display: inline-block;
+    background-color: #e74c3c;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+  }
+  
+  .download-brochure:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Full-Width Image Below the Overview Section */
+  .overview-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    z-index: 2;
+  }
+  
