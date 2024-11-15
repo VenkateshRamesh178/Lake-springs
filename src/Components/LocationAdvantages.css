@@ -1,6 +1,13 @@
 .location-section {
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
     padding: 4rem 2rem;
     background-color: #f4f4f9;
+  }
+
+  .location-section > *{
+    flex: 1;
   }
   
   .location-content {
@@ -13,6 +20,7 @@
   .location-details {
     flex: 1;
     max-width: 45%;
+    min-width: fit-content;
   }
   
   .location-details h2 {
@@ -33,7 +41,9 @@
   
   .location-map {
     flex: 1;
+    flex-grow: 1;
     max-width: 50%;
+    min-width: fit-content;
   }
   
   .location-map iframe {

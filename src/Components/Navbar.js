@@ -14,6 +14,7 @@ const Navbar = ({ showPopup }) => {
       {/* Logo Section */}
       <div className="navbar-logo">
         <img src="logo.png" alt="NCC Lake Springs" />
+        <h6>Authorised sales partner</h6>
       </div>
 
       {/* Navigation Links */}
@@ -29,8 +30,11 @@ const Navbar = ({ showPopup }) => {
       {/* Call and Enquire Now Buttons */}
       <div className="navbar-buttons">
         <a href="tel:+91 8310933745" className="call-button">
-          Call Now
+          8310933745
         </a>
+        <button className="enquire-button" onClick={showPopup}>
+          Download Brochure
+        </button>
         <button className="enquire-button" onClick={showPopup}>
           Enquire Now
         </button>
