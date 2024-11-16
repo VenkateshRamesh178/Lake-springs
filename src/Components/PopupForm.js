@@ -3,7 +3,7 @@ import emailjs from 'emailjs-com';
 import emailConfig from '../emailConfig';
 import './PopupForm.css';
 
-const PopupForm = ({ show, closePopup }) => {
+const PopupForm = ({ show, closePopup, heading }) => {
   const [formData, setFormData] = useState({ name: '', phone: '', email: '' });
 
   const handleChange = (e) => {
@@ -13,7 +13,7 @@ const PopupForm = ({ show, closePopup }) => {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    
+
     if (!formData.name || !formData.phone) {
       alert('Please fill in your name and phone number.');
       return;
@@ -33,11 +33,12 @@ const PopupForm = ({ show, closePopup }) => {
       );
   };
 
-  if (!show) return null;
+  if (!show) return null; // Ensure this returns null if not visible
 
   return (
     <div className="popup">
       <div className="popup-inner">
+        <h2>{heading}</h2> {/* Display the heading */}
         <form onSubmit={sendEmail}>
           <input
             type="text"

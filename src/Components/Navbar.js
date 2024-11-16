@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import logo from '../assets/logo.png';
 
 const Navbar = ({ showPopup }) => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -20,7 +21,7 @@ const Navbar = ({ showPopup }) => {
     <nav className="navbar">
       {/* Logo Section */}
       <div className="navbar-logo">
-        <img src="logo.png" alt="NCC Lake Springs" />
+        <img src={logo} alt="NCC Lake Springs" />
         <h6>Authorised sales partner</h6>
       </div>
 
@@ -42,12 +43,13 @@ const Navbar = ({ showPopup }) => {
       {/* Call and Enquire Now Buttons */}
       <div className="navbar-buttons">
         <a href="tel:+91 8310933745" className="call-button">
-          8310933745
+          Call: 8310933745
         </a>
-        <button className="enquire-button" onClick={showPopup}>
+        {/* Pass specific heading based on the button clicked */}
+        <button className="enquire-button" onClick={() => showPopup('Download Brochure')}>
           Download Brochure
         </button>
-        <button className="enquire-button" onClick={showPopup}>
+        <button className="enquire-button" onClick={() => showPopup('Enquire Now')}>
           Enquire Now
         </button>
       </div>

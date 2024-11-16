@@ -45,7 +45,7 @@
 .project-info {
   margin: 5%;
   padding: 20px;
-  min-width: 350px;
+  min-width: 300px;
 }
 
 .project-info h1 {
@@ -135,4 +135,9 @@
   .book-visit-form {
     justify-self: center;
   }
+}
+
+mark{
+  background-color:white;
+  backface-visibility: 0.7;
 }

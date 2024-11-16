@@ -10,13 +10,13 @@ const Pricing = ({showPopup}) => {
           <h3>3 BHK</h3>
           <p>Size: 1622 - 2085 sq.ft.</p>
           <p>Starting Price: ₹1.62 Cr*</p>
-          <button onClick={showPopup}>Enquire Now</button>
+          <button onClick={showPopup}>Get Pricing</button>
         </div>
         <div className="pricing-card">
           <h3>3.5 BHK</h3>
           <p>Size: 2168 sq.ft.</p>
           <p>Starting Price: ₹2.36 Cr</p>
-          <button onClick={showPopup}>Enquire Now</button>
+          <button onClick={showPopup}>Get Pricing</button>
         </div>
       </div>
     </section>
