@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Navbar.css';
 
 const Navbar = ({ showPopup }) => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
   const handleScroll = (id) => {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
+      setIsMobileMenuOpen(false); // Close the menu on link click (for mobile)
     }
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
   return (
@@ -17,8 +24,13 @@ const Navbar = ({ showPopup }) => {
         <h6>Authorised sales partner</h6>
       </div>
 
+      {/* Hamburger Menu Icon (for mobile) */}
+      <div className="hamburger-menu" onClick={toggleMobileMenu}>
+        ☰
+      </div>
+
       {/* Navigation Links */}
-      <ul className="navbar-links">
+      <ul className={`navbar-links ${isMobileMenuOpen ? 'active' : ''}`}>
         <li onClick={() => handleScroll('overview')}>Overview</li>
         <li onClick={() => handleScroll('amenities')}>Amenities</li>
         <li onClick={() => handleScroll('pricing')}>Pricing</li>
