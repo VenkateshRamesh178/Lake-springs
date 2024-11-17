@@ -15,7 +15,7 @@
     left: 0;
     width: 100%;
     height: 25%;
-    background: url('../assets/scaled_bg.jpg') no-repeat center center/cover;
+    background: url('../assets/scaled_bg.png') no-repeat center center/cover;
     filter: blur(10px); /* Adjust the blur intensity as needed */
     transform: scale(1.1); /* Slightly scale up for better blur effect */
     z-index: 0;

@@ -12,11 +12,11 @@
   /* gap: 20px; */
   align-items: center;
   padding: 40px;
-  height: 80vh;
+  height: 100vh;
   width: cover;
-  background-image: url('../assets/scaled_bg.jpg');
-  background-size:80%;
-  background-repeat: no-repeat;
+  background-image: url('../assets/scaled_bg.png');
+  background-size:100%;
+  background-repeat:no-repeat;
   background-position: center;
   color: #fff;
 }
@@ -135,9 +135,4 @@
   .book-visit-form {
     justify-self: center;
   }
-}
-
-mark{
-  background-color:white;
-  backface-visibility: 0.7;
 }
